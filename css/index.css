@@ -1,0 +1,791 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 置中區域 */
+.container {
+    max-width: 1088px;
+    margin: 0 auto;
+    /* margin: 0px 139px; */
+    /* outline: auto; */
+}
+
+
+/* ---------------------header ------------------------------*/
+.header {
+    position: relative;
+    margin-bottom: 300px;
+}
+
+/* 背景區 */
+.banner_bg {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 50%;
+
+}
+
+/* .banner_bg_sm {
+    display: none;
+} */
+
+.home_person {
+
+    position: absolute;
+    width: 34%;
+    right: 10px;
+    top: 100px;
+}
+
+/* logo+方案按鈕 */
+.banner_header {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 34px 0;
+    margin-bottom: 212px;
+
+
+}
+
+.banner_header img {
+    width: 218px;
+}
+
+.header_btn a {
+
+
+    padding: 8px 32px;
+
+    background: #FF5D50;
+    border-radius: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+
+/* top按鈕 */
+.btn_position {
+
+    position: fixed;
+    z-index: 1;
+    right: 48px;
+    top: 350px;
+
+}
+
+.top_btn {
+    background: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px 15PX;
+    font-weight: bold;
+}
+
+.top_btn:hover {
+    background: #FFFFFF;
+    border: 1px solid #56C4C5;
+    color: #56C4C5;
+}
+
+/* 簡介 */
+.header_main {
+    display: flex;
+    align-items: center;
+
+}
+
+.main_title {
+    padding: 16px 0px;
+}
+
+.main_title h2 {
+    font-size: 48px;
+    font-weight: bold;
+    padding: 5px 0;
+
+}
+
+.main_context h6 {
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #56C4C5;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.main_context p {
+    font-size: 20px;
+    color: #221E1F;
+}
+
+/* ---------------------社交平台  ------------------------------*/
+
+
+.social {
+    margin-bottom: 100px;
+
+}
+
+.social_context h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #221E1F;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+/* 社交平台-圖-區塊 */
+.social_list {
+    display: flex;
+
+    margin: 0 auto;
+
+}
+
+.social_item {
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.social_item img {
+    width: 25%;
+    padding-bottom: 24px;
+}
+
+/* 社交平台-圖->下方簡介-區塊 */
+
+.social_item h2 {
+    font-size: 24px;
+    padding: 10% 0%;
+    font-weight: bold;
+
+}
+
+.social_item p {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 2.5%;
+    font-weight: bold;
+    color: #747474;
+}
+
+
+
+
+
+
+/* ---------------------角色------------------------------*/
+.role {
+    margin-bottom: 100px;
+}
+
+/* 標題 */
+.role_context h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #221E1F;
+    margin-bottom: 16px;
+}
+
+.role_context p {
+    font-size: 20px;
+    text-align: center;
+    color: #221E1F;
+    margin-bottom: 48px;
+}
+
+/* 角色列表 */
+.role {
+    margin-bottom: 100px;
+}
+
+.role_context h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #221E1F;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.role_context p {
+    font-size: 20px;
+    text-align: center;
+    color: #221E1F;
+    margin-bottom: 48px;
+}
+
+/* 角色-圖-區塊 */
+.role_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.role_item {
+    width: 23%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px #00000014;
+    /* border-radius: 0px 0px 12px 12px; */
+}
+
+.role_item img {
+    border-radius: 12px 12px 0px 0px;
+}
+
+/* 角色-圖的下方簡介-區塊 */
+.role_item_context {
+    padding-bottom: 24px;
+}
+
+.role_item_context h4 {
+    text-align: center;
+    font-weight: bold;
+    color: #56C4C5;
+    padding: 16px 0px;
+    font-size: 16px;
+
+}
+
+.role_item_context p {
+    text-align: center;
+
+    line-height: 1.5;
+    font-size: 16px;
+
+}
+
+
+/* 功能區 */
+.ai_function {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* 左邊功能展示 */
+.function_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+.function_item {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    width: 45%;
+    padding: 32px 32px 48px 32px;
+    margin-bottom: 28px;
+}
+
+.caption h3 {
+    font-size: 18px;
+    padding-bottom: 7%;
+    font-weight: bold;
+
+}
+
+.caption p {
+    font-size: 16px;
+    padding-bottom: 2%;
+
+
+}
+
+.function_icon {
+
+    background: #FFFFFF 0% 0% no-repeat;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 50%;
+    width: 50%;
+    margin-bottom: 38px;
+    padding: 10px;
+}
+
+
+/* 右邊簡介 */
+.function_context {
+    width: 50%;
+    /* text-align: center; */
+    margin-left: 13%;
+
+}
+
+.function_context_title {
+    font-size: 32px;
+    margin-bottom: 16px;
+    font-weight: bold;
+
+}
+
+.function_context_body {
+
+    padding-bottom: 7%;
+
+}
+
+.function_context_body p {
+    font-size: 18px;
+    padding-bottom: 2%;
+
+}
+
+
+.function_btn {
+    width: 40%;
+
+}
+
+.function_btn a {
+
+    display: block;
+    padding: 12px 32px;
+
+    background: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+
+/* --------------------- 好評如潮 ------------------------------*/
+
+.reviews {
+    padding-bottom: 100px;
+}
+
+.reviews_list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.reviews_title {
+    padding-bottom: 100px;
+}
+
+.reviews_title h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.reviews_item {
+    background: #FFFFFF 0% 0% no-repeat;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 32px;
+    width: 30%;
+    position: relative;
+
+}
+
+.reviews_item_body {
+    padding-top: 16px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid rgb(239, 239, 239);
+}
+
+.reviews_item_body p {
+    line-height: 1.5;
+}
+
+.user_photo {
+    position: absolute;
+    top: -55px;
+}
+
+.user_photo img {
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 50%;
+    width: 80px;
+}
+
+.user_company {
+    padding-top: 25px;
+    padding-bottom: 8px;
+}
+
+.user_company h6 {
+    font-weight: bold;
+}
+
+.user_name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ---------------------表尾上面區塊  ------------------------------*/
+.home_footer {
+    font-size: 16px;
+    background: #F5F5F5;
+    border: 1px solid rgb(223, 223, 223);
+    text-align: center;
+    color: #221E1F;
+    padding: 16px 0px;
+}
+
+
+.home_footer_area {
+    /* max-width: 1088px; */
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+}
+
+.home_footer_body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.home_footer_context {
+    margin: 0 auto;
+    font-size: 32px;
+    text-align: center;
+    color: #221E1F;
+    font-weight: bold;
+    margin-bottom: 48px;
+    padding-top: 300px;
+}
+
+/* --------------------- footer按鈕 社交平台  ------------------------------*/
+
+.footer_btn {
+    /* width: 17.3%; */
+    margin: 0 auto;
+}
+
+.footer_btn a {
+
+    padding: 12px 32px;
+
+    background: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+/* -------------------------------------------------- 響應式   -------------------------------------------------------------------*/
+@media (max-width:992px) {
+
+
+    .wrap {
+        padding: 0 20px;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+
+
+
+    /* ---------------------header------------------------*/
+    .header {
+        margin-bottom: 300px;
+    }
+
+    /* TOP按鈕 */
+
+    .btn_position {
+
+        right: 50px;
+        top: 300px;
+    }
+
+    /* 背景 */
+    .banner_bg {
+        display: none;
+    }
+
+
+
+    .home_person {
+        margin: 0 auto;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100%;
+        width: 45%;
+        margin-bottom: 50px;
+        right: 303px;
+        top: 359px;
+
+    }
+
+    .home_person img {
+        display: block;
+    }
+
+    /* logo+方案案扭 */
+    .banner_header {
+        border-bottom: 3px solid #F5CA52;
+        padding: 24px 20px;
+        margin-bottom: 32px;
+    }
+
+    .header_main {
+        margin: 0 auto;
+
+    }
+
+    .main_context {
+        margin-bottom: 150px;
+    }
+
+    /* ---------------------社交平台------------------------*/
+
+    .social_list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+    }
+
+    .social_item {
+        margin-bottom: 16px;
+
+    }
+
+    .social_item h2 {
+        padding: 5% 0%;
+
+    }
+
+    /* ---------------------角色------------------------*/
+    .role_list {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    .role_item {
+        width: 60%;
+        margin-bottom: 24px;
+    }
+
+    /* ---------------------功能------------------------*/
+
+    .ai_function {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .function_list {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 60%;
+        align-items: center;
+    }
+
+    .function_item {
+        width: 60%;
+    }
+
+    .function_context {
+        margin-left: 0;
+        margin-bottom: 32px;
+        text-align: center;
+        /* line-height: 1.5; */
+    }
+
+    .function_btn {
+        margin: 0 auto;
+        width: 150px;
+    }
+
+    /* ---------------------評論------------------------*/
+
+    .reviews_list {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reviews_item {
+        margin-bottom: 100px;
+        width: 70%;
+    }
+
+
+}

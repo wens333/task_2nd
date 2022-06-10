@@ -1,0 +1,578 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --------------------- 中間區塊--------------------- */
+
+.container {
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+/* ---------------------header ------------------------------*/
+
+
+.header {
+    position: relative;
+    margin-bottom: 300px;
+
+}
+
+/* 背景區 */
+.banner_bg {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    /* width: 50%; */
+    width: 885px;
+    height: 546px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg");
+    background-repeat: no-repeat;
+
+}
+
+.banner_bg_color {
+    z-index: -2;
+    position: absolute;
+    background: #F7F9FD;
+    border-radius: 0px 0px 0px 300px;
+    width: 100%;
+    height: 500px;
+}
+
+.banner_bg_sm {
+    display: none;
+}
+
+
+/* logo+方案按鈕 */
+.banner_header {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 34px 0;
+    margin-bottom: 92px;
+
+
+}
+
+.banner_header img {
+    width: 218px;
+}
+
+.header_btn a {
+
+
+    padding: 8px 32px;
+
+    background: #FF5D50;
+    border-radius: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+
+/* top按鈕 */
+.btn_position {
+    z-index: 1;
+    position: fixed;
+    right: 48px;
+    top: 350px;
+
+}
+
+.top_btn {
+    background: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px 15PX;
+    font-weight: bold;
+}
+
+.top_btn:hover {
+    background: #FFFFFF;
+    border: 1px solid #56C4C5;
+    color: #56C4C5;
+}
+
+/* 簡介 */
+.header_main {
+    display: flex;
+    align-items: center;
+
+}
+
+.main_title {
+    padding: 16px 0px;
+}
+
+.main_title h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+
+}
+
+
+.main_context p {
+    font-size: 20px;
+    color: #221E1F;
+}
+
+
+
+/* -------------彈性選擇----------------------- */
+
+.pj_select {
+    margin: 0 auto;
+}
+
+/* 標題 */
+.pj_title {
+    margin-bottom: 48px;
+
+}
+
+.pj_title h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #221E1F;
+    font-weight: bold;
+
+}
+
+/* 選人數的按鈕 */
+.people_list {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 54px;
+
+}
+
+.people_item a {
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    background: #FFFFFF;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    text-align: center;
+    color: #56C4C5;
+    padding: 12px 32px;
+
+}
+
+.people_item a:hover {
+    background: #56C4C5 0% 0% no-repeat;
+    color: #FFFFFF;
+}
+
+/* ---------------------彈性選擇-版本------------------------------*/
+
+.project_detail {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+
+/* ---------------------試算價錢-中間試算用戶區 ------------------------------*/
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px;
+
+}
+
+/* 等於 */
+.price_equal {
+    font-size: 29px;
+    color: #221E1F;
+
+}
+
+.price_item {
+    text-align: center;
+    background: #F5F5F5;
+    border-radius: 12px;
+    opacity: 1;
+    padding: 24px;
+
+
+}
+
+.price_context {
+    font-size: 32px;
+    color: #56C4C5;
+}
+
+.price_context sub {
+    font-size: 12px;
+
+
+}
+
+.price_item h6 {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+/* ---------------------方案的試算價錢區-標題內文 ------------------------------*/
+
+.pj_item {
+    margin: 0 auto;
+    background: #FFFFFF 0% 0%;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    width: 48%;
+    padding: 20px;
+}
+
+.pj_item h3 {
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 3px solid rgb(239, 239, 239);
+    padding: 10px 0;
+    color: #221E1F;
+    font-weight: bold;
+
+}
+
+.pj_item_p {
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.pj_item_p p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* -------------------- 方案的資訊-------------------------------*/
+
+.pj_info {
+    margin-bottom: 16px;
+}
+
+.info_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+}
+
+.info_item img {
+    margin-right: 12.94px;
+}
+
+/* ---------------------立即體驗按鈕------------------------------*/
+
+.pj_check a {
+
+    display: block;
+    padding: 12px;
+    width: 33%;
+    margin: 0 auto;
+    /* padding: 12px 32px; */
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+}
+
+
+/* ---------------------常見問題------------------------------*/
+
+.question {
+    margin-bottom: 100px;
+    margin: 0 auto;
+}
+
+.question_title {
+    margin-bottom: 48px;
+}
+
+.question_title h2 {
+    text-align: center;
+    color: #221E1F;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.question_list {
+    margin: 0 auto;
+}
+
+.question_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    margin-bottom: 16px;
+    background: #FFFFFF 0% 0% no-repeat;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+}
+
+/* ---------------------表尾------------------------------*/
+
+.choice_footer {
+    font-size: 16px;
+    text-align: center;
+    color: #221E1F;
+    background: #F5F5F5;
+    padding: 16px 0;
+}
+
+/* ---------------------RWD------------------------------*/
+@media (max-width:992px) {
+
+    /*  */
+    .wrap {
+        padding: 0 20px;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+
+    /* ---------------------header------------------------*/
+    .header {
+        margin-bottom: 300px;
+    }
+
+    /* TOP按鈕 */
+
+    .btn_position {
+
+        right: 50px;
+        top: 300px;
+    }
+
+    /* 背景 */
+    .banner_bg {
+        display: none;
+    }
+
+    /* rwd顯示的背景圖 */
+
+    .banner_bg_sm {
+        display: block;
+        position: absolute;
+        z-index: -1;
+
+    }
+
+    /* 灰色底背景 */
+    .banner_bg_color {
+        width: 100%;
+    }
+
+
+
+
+
+
+    /* logo+方案案扭 */
+    .banner_header {
+        border-bottom: 3px solid #F5CA52;
+        padding: 24px 20px;
+        margin-bottom: 0px;
+        background: white;
+    }
+
+    .header_main {
+        margin: 0 auto;
+        padding-top: 48px;
+
+    }
+
+    .main_context {
+        margin-bottom: 150px;
+    }
+
+    /* 選人數按扭 */
+    .people_list {
+        overflow-x: auto;
+    }
+
+    .people_item a {
+        margin-right: 15px;
+        width: 160px;
+    }
+
+    .project_detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 選方案 */
+    .pj_item {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .pj_info {
+        margin-bottom: 47px;
+    }
+}
