@@ -216,14 +216,7 @@ img {
 
 
 /* top按鈕 */
-.btn_position {
 
-    position: fixed;
-    z-index: 1;
-    right: 48px;
-    top: 350px;
-
-}
 
 .top_btn {
     background: #56C4C5;
@@ -231,8 +224,12 @@ img {
     border-radius: 50%;
     text-decoration: none;
     color: #FFFFFF;
-    padding: 20px 15PX;
+    padding: 26px 17px;
     font-weight: bold;
+    position: fixed;
+    z-index: 1;
+    right: 48px;
+    bottom: 25px;
 }
 
 .top_btn:hover {
@@ -281,7 +278,7 @@ img {
 
 }
 
-.social_context h2 {
+.social_context h3 {
     font-size: 32px;
     text-align: center;
     color: #221E1F;
@@ -311,7 +308,7 @@ img {
 
 /* 社交平台-圖->下方簡介-區塊 */
 
-.social_item h2 {
+.social_item h4 {
     font-size: 24px;
     padding: 10% 0%;
     font-weight: bold;
@@ -337,7 +334,7 @@ img {
 }
 
 /* 標題 */
-.role_context h2 {
+.role_context h3 {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
@@ -526,7 +523,7 @@ img {
     padding-bottom: 100px;
 }
 
-.reviews_title h2 {
+.reviews_title h3 {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
@@ -568,7 +565,7 @@ img {
     padding-bottom: 8px;
 }
 
-.user_company h6 {
+.user_company h4 {
     font-weight: bold;
 }
 
